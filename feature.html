@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="./feature.css">
+    <!-- FONT AWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <!-- LOGO -->
+        <div class="section1">
+            <h1><b>COZA</b> STORE</h1>
+        </div>
+        <!-- NAV -->
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li class="dropdown"><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="feature.html">Features</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- ICON -->
+        <div class="icon-container">
+            <span class="icon search-btn"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <span class="icon"><i class="fa-solid fa-cart-shopping"></i><span class="badge">2</span></span>
+            <span class="icon"><i class="fa-solid fa-heart"></i><span class="badge">0</span></span>
+        </div>
+         <!-- HAMBURGER ICON -->
+        <span class="hamburger"><i class="fa-solid fa-bars"></i></span>
+    </header>
+  <div class="cart-wrapper">
+    <!-- Left Div: Cart Items -->
+       <div class="cart-items">
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="product-cell">
+            <img src="https://preview.colorlib.com/theme/cozastore/images/item-cart-04.webp" alt="Fresh Strawberries">
+            <span>Fresh Strawberries</span>
+          </td>
+          <td>$36.00</td>
+          <td class="quantity-cell">
+            <button class="qty-btn">-</button>
+            <input type="text" value="1">
+            <button class="qty-btn">+</button>
+          </td>
+          <td>$36.00</td>
+        </tr>
+        <tr>
+          <td class="product-cell">
+            <img src="https://preview.colorlib.com/theme/cozastore/images/item-cart-05.webp" alt="Lightweight Jacket">
+            <span>Lightweight Jacket</span>
+          </td>
+          <td>$16.00</td>
+          <td class="quantity-cell">
+            <button class="qty-btn">-</button>
+            <input type="text" value="1">
+            <button class="qty-btn">+</button>
+          </td>
+          <td>$16.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Coupon + Update Cart -->
+    <div class="cart-actions">
+      <input type="text" placeholder="Coupon Code">
+      <button class="coupon-btn">Apply Coupon</button>
+      <button class="update-btn">Update Cart</button>
+    </div>
+  </div>
+
+  <!-- Right Div: Cart Totals -->
+  <div class="cart-totals">
+    <h2>Cart Totals</h2>
+    <p>Subtotal: <span>$79.65</span></p>
+    <p>Shipping: <span>No shipping methods available</span></p>
+
+    <form class="shipping-form">
+      <label>Country:</label>
+      <select>
+        <option>Select a country</option>
+        <option>Pakistan</option>
+        <option>USA</option>
+        <option>UK</option>
+      </select>
+
+      <label>State / Country:</label>
+      <input type="text" placeholder="Enter state">
+
+      <label>Postcode / Zip:</label>
+      <input type="text" placeholder="Enter postcode">
+
+      <button type="button">Update Totals</button>
+    </form>
+          <p class="total">Total: <span>$79.65</span></p>
+         <button class="checkout-btn">Proceed to Checkout</button>
+  </div>
+       </div>
+
+  <!-- FOOTER -->
+        <footer class="footer">
+            <div>
+                <ul><b>CATAGORIES</b></ul>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">Watches</a></li>
+            </div>
+            <div>
+                <ul><b>HELP</b></ul>
+                <li><a href="#">Track Order</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">FAQs</a></li>
+            </div>
+            <div>
+                <b>GET IN TOUCH</b>
+                <P>Any questions? Let us know in store at 8th floor,
+                    379 Hudson St, New York, NY10018 or
+                    call us on (+1) 96 716 6879
+                </P>
+                <span>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </span>
+            </div>
+            <div>
+                <b>NEWSLETTER</b>
+                <p>email@example.com</p>
+                <button class="subs">Subscribe</button>
+            </div>
+            <!-- FOOTER BOTTOM -->
+            <!-- PAYMENT ICONS SECTION -->
+            <div class="footer-bottom">
+                <div class="payment-icons">
+                    <img src="./assets/FOOTER IMAGES/1.jpeg" alt="">
+                    <img src="./assets/FOOTER IMAGES/2.jpeg" alt="">
+                    <img src="./assets/FOOTER IMAGES/3.jpeg" alt="">
+                    <img src="./assets/FOOTER IMAGES/4.jpeg" alt="">
+                    <img src="./assets/FOOTER IMAGES/5.jpeg" alt="">
+                </div>
+                <div class="footer-credit">
+                    This template is made with <i class="fa-regular fa-heart"></i> by AREEJ
+                    IRSHAD
+                </div>
+            </div>
+        </footer>
+
+        <!-- CDN BOOTSTRAP JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- JS LINK -->
+        <script src="./script.js"></script>
+</body>
+
+</html>
