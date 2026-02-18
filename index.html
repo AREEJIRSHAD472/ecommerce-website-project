@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- FONT AWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <!-- LOGO -->
+        <div class="section1">
+            <h1><b>COZA</b> STORE</h1>
+        </div>
+        <!-- NAV -->
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li class="dropdown"><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="feature.html">Features</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- ICON -->
+        <div class="icon-container">
+            <span class="icon search-btn"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <span class="icon"><i class="fa-solid fa-cart-shopping"></i><span class="badge">2</span></span>
+            <span class="icon"><i class="fa-solid fa-heart"></i><span class="badge">0</span></span>
+        </div>
+        <!-- HAMBURGER ICON -->
+        <span class="hamburger"><i class="fa-solid fa-bars"></i></span>
+    </header>
+    <!--CAROUSEL-->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://ideogram.ai/assets/image/balanced/response/x9e7GPpjRj6LAQ1VhLQb5w@2k"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://ideogram.ai/assets/image/balanced/response/x9e7GPpjRj6LAQ1VhLQb5w@2k"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://ideogram.ai/assets/image/balanced/response/x9e7GPpjRj6LAQ1VhLQb5w@2k"
+                    class="d-block w-100" alt="...">
+             </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- CARDS -->
+    <main>
+        <section class="products">
+            <!-- CARD 1 -->
+            <div class="card">
+                <b>WOMEN</b>
+                <p>Spring 2038</p>
+                <img src="./HOME PAGE IMAGES/1.jpeg" alt="">
+                <button class="shop-btn">Shop Now</button>
+            </div>
+            <!-- CARD 2 -->
+            <div class="card">
+                <b>MEN</b>
+                <p>Spring 2038</p>
+                <img src="./HOME PAGE IMAGES/2.jpeg" alt="">
+                <button class="shop-btn">Shop Now</button>
+            </div>
+            <!-- CARD 3 -->
+            <div class="card">
+                <b>ACCESSORIES</b>
+                <p>New Trend</p>
+                <img src="./HOME PAGE IMAGES/3.jpeg" alt="">
+                <button class="shop-btn">Shop Now</button>
+            </div>
+        </section>
+
+        <!-- PRODUCT OVERVIEW -->
+        <h1 class="overview-title"><b>PRODUCT OVERVIEW</b></h1>
+        <!-- FILTER BUTTONS -->
+        <div class="filter-bar">
+            <div class="filters product-card">
+                <button onclick="filterProducts('all')">All</button>
+                <button onclick="filterProducts('men\'s clothing')">Men</button>
+                <button onclick="filterProducts('women\'s clothing')">Women</button>
+                <button onclick="filterProducts('electronics')">Electronics</button>
+                <button onclick="filterProducts('jewelery')">Jewelry</button>
+            </div>
+            <div class="action-buttons">
+                <button class="filter-btn">
+                    <i class="fa-solid fa-sliders"></i> Filter
+                </button>
+                <button class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i> Search
+                </button>
+            </div>
+        </div>
+
+        <!-- PRODUCTS WILL COME FROM API -->
+        <div id="productGrid" class="product-grid">
+            <!-- Dynamic Products Here -->
+        </div>
+
+        <!-- Page Top Anchor -->
+        <div class="load-more-container">
+            <a href="shop.html" class="load-more-btn"><b>LOAD MORE</b></a>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div>
+                <ul><b>CATAGORIES</b></ul>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">Watches</a></li>
+            </div>
+            <div>
+                <ul><b>HELP</b></ul>
+                <li><a href="#">Track Order</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">FAQs</a></li>
+            </div>
+            <div>
+                <b>GET IN TOUCH</b>
+                <P>Any questions? Let us know in store at 8th floor,
+                    379 Hudson St, New York, NY10018 or
+                    call us on (+1) 96 716 6879
+                </P>
+                <span>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </span>
+            </div>
+            <div>
+                <b>NEWSLETTER</b>
+                <p>email@example.com</p>
+                <button class="subs">Subscribe</button>
+            </div>
+            <!-- FOOTER BOTTOM -->
+            <!-- PAYMENT ICONS SECTION -->
+            <div class="footer-bottom">
+                <div class="payment-icons">
+                    <img src="./assets/FOOTER IMAGES/1.jpeg" alt="">
+                    <img src="./assets/FOOTER IMAGES/2.jpeg" alt="">
+                    <img src="./assets/FOOTER IMAGES/3.jpeg" alt="">
+                    <img src="./assets/FOOTER IMAGES/4.jpeg" alt="">
+                    <img src="./assets/FOOTER IMAGES/5.jpeg" alt="">
+                </div>
+                <div class="footer-credit">
+                    This template is made with <i class="fa-regular fa-heart"></i> by AREEJ
+                    IRSHAD
+                </div>
+            </div>
+        </footer>
+
+        <!-- CDN BOOTSTRAP JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- JS LINK -->
+        <script src="./script.js"></script>
+</body>
+
+</html>
