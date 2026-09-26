@@ -11,7 +11,7 @@ body {
 /* HEADER */
 header {
   position: fixed;
-  top: 0;
+  top:0;
   left: 0;
   width: 100%;
   display: flex;
@@ -26,7 +26,7 @@ header {
 /* Logo styling */
 .section1 {
   flex: 0 0 auto;
-}
+} 
 
 .section1 h1 {
   font-size: 24px;
@@ -71,7 +71,7 @@ header {
 }
 
 .icon {
-  position: relative;
+  position: relative;   
   font-size: 24px;
   color: black;
   cursor: pointer;
@@ -87,7 +87,6 @@ header {
   font-size: 18px;
   color: black;
 }
-
 /* HAMBURGER ICON */
 .hamburger {
   display: none;
@@ -118,7 +117,6 @@ header {
     display: block;
   }
 }
-
 .badge {
   position: absolute;
   top: -6px;
@@ -130,22 +128,21 @@ header {
   font-size: 13px;
   border-radius: 50%;
   font-weight: 600;
-  line-height: 1;
+  line-height: 1; 
   display: flex;
-  align-items: center;
+  align-items: center;     
   justify-content: center;
-  text-align: center;
+  text-align: center; 
 } 
-
-
 
 /* SLIDER */
 /* Carousel container */
 #carouselExampleControls {
   width: 100%;
+  /* max-width: 1350px; */
   max-width: none;
   margin: 0;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 /* Carousel images */
@@ -165,30 +162,33 @@ header {
 
 /* CARDS */
 .products {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  justify-content:center;
-  align-items: center;
-  gap: 25px;
-  max-width:1250px;
-  margin: 0 auto;
-  padding: 35px 25px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 35px 25px;
 }
 
-.products.card {
-  position: relative;
-  display: block;
-  width: 100%;
-  max-width: none;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  overflow: hidden;
+/* CARD BOX */
+.products .card {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 250px;
+    max-width: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
 }
+
 /* IMAGE */
 .products .card img {
     position: absolute;
@@ -262,6 +262,7 @@ header {
 .products .card:hover .shop-btn {
     opacity: 1;
 }
+
 /* TABLET */
 @media (max-width: 992px) {
     .products {
@@ -293,6 +294,8 @@ header {
         height: 175px;
     }
 }
+
+
 
 /* PRODUCT VIEW */
 .overview-title {
@@ -718,4 +721,16 @@ header {
 .payment-icons img {
   height: 24px;
 }
+}
+
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
 }
